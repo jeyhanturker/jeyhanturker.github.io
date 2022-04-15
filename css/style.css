@@ -1,0 +1,159 @@
+/* css stylesheet for namibia.html */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body {
+  font-family: "EB Garamond", "Courier New", serif;
+  font-size: 16px;
+  color: #000080;
+  line-height: 1.5;
+
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 16px;
+  grid-template-areas:
+    "header header"
+    "nav    main"
+    "footer footer"
+}
+
+h1 {
+  margin: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 34px;
+  color: rgb(255,255,255);
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+h2 {
+  border-bottom: 1px solid #ADD8E6;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+h4 {
+  font-style: italic;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  padding: 16px;
+  font-weight: 700px;
+}
+
+p,
+li,
+table {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+table {
+  border: 1px dotted rgb(255,255,255);
+  border-spacing: 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+a,
+a:link {
+  color: rgb(255,255,255);
+}
+
+a:visited {
+  color: rgb(135,206,250);
+}
+
+a:hover {
+  background-color: rgb(112,128,144);
+}
+
+a:active {
+  color: rgb(0,100,0);
+}
+
+header,
+nav,
+footer {
+  color: rgb(255,255,255);
+  background-color: #000080;
+}
+
+header {
+  padding: 16px;
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  grid-template-areas:
+  "introduction introduction"
+  "flag         flag"
+  "people       people"
+  "geography    geography"
+  "government   government"
+}
+
+img {
+  max-width: 500px;
+  border: 2px solid #000080;
+}
+
+figure {
+  margin-left: 16px;
+}
+
+figcaption {
+  padding-top: 6px;
+}
+
+#introduction {
+  grid-area: introduction;
+  background-color: rgba(0,128,0,0.7);
+}
+
+#namibia-flag {
+  grid-area: flag;
+  background-color: rgba(0,128,0,0.7);
+}
+
+#people-and-society {
+  grid-area: people;
+  background-color: rgba(0,128,0,0.7);
+}
+
+#geography {
+  grid-area: geography;
+  background-color: rgba(0,128,0,0.7);
+}
+
+#government {
+  grid-area: government;
+  background-color: rgba(0,128,0,0.7);
+}
+
+section {
+  padding: 16px;
+}
+
+footer {
+  grid-area: footer;
+  padding: 16px;
+}

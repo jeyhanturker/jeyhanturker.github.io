@@ -88,8 +88,8 @@ footer {
 }
 
 header {
-  padding: 16px;
   grid-area: header;
+  padding: 16px;
 }
 
 nav {
@@ -109,19 +109,6 @@ main {
   "people       people"
   "geography    geography"
   "government   government"
-}
-
-img {
-  max-width: 500px;
-  border: 2px solid #000080;
-}
-
-figure {
-  margin-left: 16px;
-}
-
-figcaption {
-  padding-top: 6px;
 }
 
 #introduction {
@@ -151,6 +138,19 @@ figcaption {
 
 section {
   padding: 16px;
+}
+
+img {
+  max-width: 500px;
+  border: 2px solid #000080;
+}
+
+figure {
+  margin-left: 16px;
+}
+
+figcaption {
+  padding-top: 6px;
 }
 
 footer {

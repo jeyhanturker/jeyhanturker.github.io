@@ -1,90 +1,72 @@
-/* css stylesheet for namibia.html */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Raleway:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+/* css stylesheet for final project */
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
 body {
-  font-family: "EB Garamond", "Courier New", serif;
+  font-family: "Faustina", "Courier New", serif;
   font-size: 16px;
-  color: #000080;
-  line-height: 1.5;
+  color: rgb(141, 0, 219);
+  line-height: 1.8;
 
   max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr;
   grid-gap: 16px;
   grid-template-areas:
     "header header"
-    "nav    main"
+    "nav    nav"
+    "main   main"
     "footer footer"
 }
 
 h1 {
   margin: 0;
-  font-family: "Raleway", "Arial", sans-serif;
-  font-size: 34px;
-  color: rgb(255,255,255);
+  font-family: "Orbitron", "Arial", sans-serif;
+  font-size: 40px;
+  color: rgb(84,18,83);
   line-height: 1.5;
   font-weight: 700;
 }
 
 h2 {
+  font-family: "Orbitron", "Arial", sans-serif;
   border-bottom: 1px solid #ADD8E6;
 }
 
-h3 {
-  text-decoration: underline;
-}
-
-h4 {
-  font-style: italic;
-}
-
 h2,
-h3,
-h4,
-h5 {
+h3 {
   margin-top: 0;
   padding: 16px;
   font-weight: 700px;
 }
 
-p,
-li,
-table {
+p {
   padding-left: 16px;
   padding-right: 16px;
 }
 
-table {
-  border: 1px dotted rgb(255,255,255);
-  border-spacing: 16px;
-  margin-left: 16px;
-  margin-bottom: 16px;
-}
-
 a,
 a:link {
-  color: rgb(255,255,255);
+  color: rgb(3,50,79);
 }
 
 a:visited {
-  color: rgb(135,206,250);
+  color: rgb(0,26,143);
 }
 
 a:hover {
-  background-color: rgb(112,128,144);
+  background-color: rgb(154,197,239);
 }
 
 a:active {
-  color: rgb(0,100,0);
+  color: rgb(134,29,132);
 }
 
 header,
-nav,
 footer {
-  color: rgb(255,255,255);
-  background-color: #000080;
+  color: rgb(84,18,83);
+  background-color: rgb(81,156,225);
 }
 
 header {
@@ -92,65 +74,88 @@ header {
   padding: 16px;
 }
 
-nav {
-  grid-area: nav;
-}
-
 main {
   grid-area: main;
-
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8px;
-  grid-template-areas:
-  "introduction introduction"
-  "flag         flag"
-  "people       people"
-  "geography    geography"
-  "government   government"
 }
 
-#introduction {
-  grid-area: introduction;
-  background-color: rgba(0,128,0,0.7);
+nav {
+  grid-area: nav;
+  color: rgb(255,255,255);
+  background-color: rgb(205,107,255);
+  padding: 8px;
+  max-width: 960px;
 }
 
-#namibia-flag {
-  grid-area: flag;
-  background-color: rgba(0,128,0,0.7);
-}
+ul {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  min-height: 32px;
 
-#people-and-society {
-  grid-area: people;
-  background-color: rgba(0,128,0,0.7);
-}
-
-#geography {
-  grid-area: geography;
-  background-color: rgba(0,128,0,0.7);
-}
-
-#government {
-  grid-area: government;
-  background-color: rgba(0,128,0,0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 section {
-  padding: 16px;
+  padding: 8px;
 }
 
 img {
-  max-width: 500px;
-  border: 2px solid #000080;
+  max-width: 960px;
+  border: 2px solid rgb(81,156,225);
+}
+
+.homepage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "photo intro"
+}
+
+.homepage img {
+  max-width: 448px;
+}
+
+.pressphotos {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "p-one p-two"
+  "p-thr p-four"
+}
+
+.pressphotos img {
+  max-width: 448px;
+}
+
+.pressphotos figure {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.coverart {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "cover covertwo"
 }
 
 figure {
   margin-left: 16px;
 }
 
+audio {
+  width: 680px;
+  margin-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
 figcaption {
   padding-top: 6px;
+  padding-bottom: 32px;
 }
 
 footer {

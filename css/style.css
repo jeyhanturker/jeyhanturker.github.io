@@ -142,6 +142,11 @@ img {
   "cover covertwo"
 }
 
+.coverart figure {
+  margin: 0;
+  padding-left: 16px;
+}
+
 figure {
   margin-left: 16px;
 }
